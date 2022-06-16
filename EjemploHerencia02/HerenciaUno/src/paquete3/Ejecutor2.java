@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -37,5 +37,19 @@ public class Ejecutor2 {
                 estDistancia.obtenerMatriculaDistancia());
         
         System.out.println(cadenaFinal);
+        
+        System.out.println("-------------------------------------------")      ;  
+        estDistancia.establecerApellidoEstudiante("Lopez");
+        
+        String cadenaFinal2 = String.format("%s", estDistancia);
+        cadenaFinal2 = String.format("%s\n"
+                + "Costo Asignatura: %.2f\n"
+                + "Número de Asignaturas: %d\n"
+                + "Total Matricula: %.2f\n",
+                cadenaFinal2,
+                estDistancia.obtenerCostoAsignatura(),
+                estDistancia.obtenerNumeroAsignaturas(),
+                estDistancia.obtenerMatriculaDistancia());
+        System.out.println(cadenaFinal2);
     }
 }

@@ -9,9 +9,8 @@ public class Estudiante {
     protected int edadEstudiante;
     
     
-    public Estudiante(String a, String iden, int ed){
+    public Estudiante(String iden, int ed){
                
-        apellidosEstudiante = a;
         identificacionEstudiante = iden;
         edadEstudiante = ed;
     }

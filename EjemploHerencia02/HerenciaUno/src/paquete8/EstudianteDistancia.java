@@ -9,8 +9,9 @@ public class EstudianteDistancia extends Estudiante{
     
     public EstudianteDistancia(String n, String ap, String iden, int e,
             int numAsg, double costoAsg){
-        super(ap, iden, e); // ap = apellido // iden = identificacion // e = edad
+        super(iden, e); // ap = apellido // iden = identificacion // e = edad
         establecerNombresEstudiante(n);
+        establecerApellidoEstudiante(ap);
         numeroAsignaturas = numAsg;
         costoAsignatura = costoAsg;
     }
@@ -19,7 +20,10 @@ public class EstudianteDistancia extends Estudiante{
     public void establecerNombresEstudiante(String nom){
         nombresEstudiante = nom.toUpperCase(); // Juan.toUpperCase() >> JUAN 
     }
-    
+    @Override
+    public void establecerApellidoEstudiante(String ape){
+        apellidosEstudiante = ape.toLowerCase();
+    }
     // 2.  Método establecerNumeroAsginaturas(numero: Real)
     public void establecerNumeroAsginaturas(int numero){
         numeroAsignaturas = numero;

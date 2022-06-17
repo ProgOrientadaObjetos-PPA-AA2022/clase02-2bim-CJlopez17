@@ -44,7 +44,7 @@ public class ReporteDistancia extends Reporte{
     @Override
     public String toString(){
         
-        String cadena = String.format("Carrera: %s \n"
+        String cadena = String.format("Carrera: %s\n"
                 + "Ciclo: %s\n"
                 + "El total de matriculas es: %.2f\n", 
                 carrera,
